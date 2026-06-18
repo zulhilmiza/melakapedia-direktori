@@ -1,0 +1,75 @@
+{
+ "penginapan": [
+  {
+   "id": "desa-damai-chalet",
+   "category": "penginapan",
+   "name": "Desa Damai Chalet",
+   "badge": "Chalet",
+   "tagline": "Chalet klasik tepi pantai",
+   "area": "Pantai Pengkalan Balak",
+   "hero": "assets/penginapan/desa-damai-chalet/hero.jpg",
+   "gallery": [
+    "assets/penginapan/desa-damai-chalet/hero.jpg",
+    "assets/penginapan/desa-damai-chalet/1.jpg",
+    "assets/penginapan/desa-damai-chalet/4.jpg",
+    "assets/penginapan/desa-damai-chalet/5.jpg",
+    "assets/penginapan/desa-damai-chalet/6.jpg"
+   ],
+   "mapsUrl": "https://maps.app.goo.gl/uuYrxPPP26XQKNdy8?g_st=ic",
+   "phone": "60132568578",
+   "whatsapp": "60132568578",
+   "facebook": "https://www.facebook.com/share/1DmBj33FTP/?mibextid=wwXIfr",
+   "tiktok": "https://www.tiktok.com/@desadamaichalet?_r=1&_t=ZS-97FkvRz3IXs",
+   "hours": "Check in 2PM, check out 12PM",
+   "priceLabel": "Dari RM200/malam",
+   "rooms": [
+    {
+     "name": "Exclusive",
+     "capacity": "2 orang",
+     "priceFrom": 200,
+     "weekday": 200,
+     "weekend": 250,
+     "superpeak": 250,
+     "thumb": "assets/penginapan/desa-damai-chalet/exclusive-1.jpg",
+     "photos": [
+      "assets/penginapan/desa-damai-chalet/exclusive-2.jpg"
+     ]
+    },
+    {
+     "name": "Premium",
+     "capacity": "3 orang",
+     "priceFrom": 220,
+     "weekday": 220,
+     "weekend": 270,
+     "superpeak": 270,
+     "thumb": "assets/penginapan/desa-damai-chalet/premium-1.jpg",
+     "photos": [
+      "assets/penginapan/desa-damai-chalet/premium-2.jpg"
+     ]
+    },
+    {
+     "name": "Premium Plus",
+     "capacity": "3 orang",
+     "priceFrom": 250,
+     "weekday": 250,
+     "weekend": 300,
+     "superpeak": 300,
+     "thumb": "assets/penginapan/desa-damai-chalet/premium-plus-1.jpg",
+     "photos": [
+      "assets/penginapan/desa-damai-chalet/premium-plus-2.jpg"
+     ]
+    }
+   ],
+   "facilities": [
+    "Parking",
+    "Kolam",
+    "BBQ pit",
+    "Wifi"
+   ],
+   "status": "disahkan",
+   "areaGroup": "pantai-pengkalan-balak"
+  }
+ ],
+ "makanan": [],
+ "aktiviti": []
+}

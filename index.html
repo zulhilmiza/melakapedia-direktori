@@ -1,0 +1,2428 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#00A978" />
+  <meta name="description" content="Direktori QR Melakapedia untuk penginapan, makanan dan aktiviti sekitar Masjid Tanah." />
+  <meta name="application-name" content="Melakapedia" />
+  <meta name="apple-mobile-web-app-title" content="Melakapedia" />
+  <link rel="canonical" href="https://pengkalanbalak.rumaku.my/" />
+  <meta property="og:locale" content="ms_MY" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Melakapedia.my" />
+  <meta property="og:title" content="Melakapedia Masjid Tanah" />
+  <meta property="og:description" content="Penginapan, makanan dan aktiviti sekitar Masjid Tanah dalam satu direktori QR." />
+  <meta property="og:url" content="https://pengkalanbalak.rumaku.my/" />
+  <meta property="og:image" content="https://pengkalanbalak.rumaku.my/assets/whatsapp-preview.png" />
+  <meta property="og:image:secure_url" content="https://pengkalanbalak.rumaku.my/assets/whatsapp-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Melakapedia Masjid Tanah" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Melakapedia Masjid Tanah" />
+  <meta name="twitter:description" content="Penginapan, makanan dan aktiviti sekitar Masjid Tanah dalam satu direktori QR." />
+  <meta name="twitter:image" content="https://pengkalanbalak.rumaku.my/assets/whatsapp-preview.png" />
+  <title>Melakapedia Masjid Tanah | Direktori QR Penginapan, Makanan &amp; Aktiviti</title>
+  <link rel="icon" href="favicon.ico?v=melakapedia-20260614" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg?v=melakapedia-20260614" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png?v=melakapedia-20260614" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=melakapedia-20260614" />
+  <link rel="manifest" href="site.webmanifest?v=melakapedia-20260614" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+  <style>
+    /* ── Tokens — Melakapedia v4 editorial coastal system ─────────────────── */
+    :root {
+      --bone:      #F2ECE0;
+      --bone-2:    #E9E1D0;
+      --paper:     #FBF7EE;
+      --ink:       #171614;
+      --ink-2:     #2A2825;
+      --ink-mute:  #6E6A60;
+      --rule:      rgba(23,22,20,0.14);
+      --rule-soft: rgba(23,22,20,0.08);
+      --sea:       #1F3D3A;
+      --sea-ink:   #15302D;
+      --clay:      #B85C3C;
+      --clay-ink:  #9D4A2E;
+      --sand:      #E8C9A8;
+      --serif: "Instrument Serif", "Cormorant Garamond", "Times New Roman", serif;
+      --sans:  "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --mono:  "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      --r-sm: 2px;
+      --r-md: 4px;
+      --topbar-h: 54px;
+    }
+
+    /* ── Reset / base ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bone-2);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: left; }
+    h1, h2, h3, p, ul, figure { margin: 0; padding: 0; }
+    ul { list-style: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 2px solid var(--sea); outline-offset: 3px; }
+
+    /* ── Frame (mobile-first column) ──────────────────────────────────── */
+    .frame {
+      max-width: 460px;
+      margin: 0 auto;
+      min-height: 100svh;
+      background: var(--bone);
+      position: relative;
+    }
+    @media (min-width: 520px) {
+      .frame {
+        border-inline: 1px solid var(--rule-soft);
+        box-shadow: 0 0 80px rgba(23,22,20,0.10);
+      }
+    }
+
+    .screen { animation: fadeUp .4s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .screen { animation: none; }
+      .card__media img, .gallery-grid img { transition: none !important; }
+    }
+
+    /* ── Typography helpers ───────────────────────────────────────────── */
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .eyebrow .dot { width: 5px; height: 5px; background: var(--clay); border-radius: 50%; flex: 0 0 auto; }
+    .mono-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+
+    /* ── Buttons ──────────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 20px;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      border: 1px solid currentColor;
+      border-radius: 999px;
+      transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .btn--clay { background: var(--clay); color: var(--paper); border-color: var(--clay); }
+    .btn--clay:active, .btn--clay:hover { background: var(--clay-ink); border-color: var(--clay-ink); }
+    .btn--sea { background: var(--sea); color: var(--paper); border-color: var(--sea); }
+    .btn--sea:active, .btn--sea:hover { background: var(--sea-ink); border-color: var(--sea-ink); }
+    .btn--ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn--ghost:active, .btn--ghost:hover { background: var(--ink); color: var(--paper); }
+
+    /* ── QR landing ───────────────────────────────────────────────────── */
+    .qr-screen {
+      min-height: 100svh;
+      background: var(--ink);
+      color: var(--paper);
+      display: flex;
+      flex-direction: column;
+      padding: 24px 24px calc(28px + env(safe-area-inset-bottom));
+    }
+    .qr-screen__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.18);
+    }
+    .qr-screen__brand { font-family: var(--serif); font-size: 22px; letter-spacing: -0.01em; }
+    .brand-logo-img { display: block; width: auto; object-fit: contain; }
+    .qr-screen__logo { height: 42px; max-width: 190px; }
+    .topbar__logo { height: 38px; max-width: 176px; }
+    .qr-screen__head .mono-label { color: rgba(255,255,255,0.55); }
+    .qr-screen__body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 26px;
+      padding: 36px 0 28px;
+    }
+    .qr-screen__eyebrow { color: rgba(255,255,255,0.6); }
+    .qr-screen__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(38px, 11vw, 48px);
+      line-height: 1.04;
+      letter-spacing: -0.015em;
+      text-wrap: balance;
+    }
+    .qr-screen__title em { font-style: italic; color: var(--sand); }
+    .qr-screen__sub { color: rgba(255,255,255,0.72); font-size: 15px; line-height: 1.55; max-width: 34ch; }
+    .qr-plate {
+      background: var(--paper);
+      border-radius: var(--r-md);
+      padding: 16px;
+      width: 168px;
+    }
+    .qr-plate__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .qr-plate__grid span { aspect-ratio: 1; border-radius: 1px; }
+    .qr-plate__cap {
+      margin-top: 12px;
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      text-align: center;
+    }
+    .qr-screen__foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.18);
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── Top bar ──────────────────────────────────────────────────────── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      height: var(--topbar-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 0 20px;
+      background: rgba(242,236,224,0.88);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .topbar__brand { display: flex; flex-direction: column; line-height: 1.05; }
+    .topbar__brand .name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.01em; }
+    .topbar__brand .sub {
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-top: 1px;
+    }
+
+    /* ── Directory header + tabs ──────────────────────────────────────── */
+    .dir-head { padding: 26px 20px 18px; }
+    .dir-head h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(32px, 9vw, 40px);
+      line-height: 1.05;
+      letter-spacing: -0.012em;
+      margin: 10px 0 8px;
+    }
+    .dir-head p { color: var(--ink-2); font-size: 14.5px; line-height: 1.5; max-width: 40ch; }
+
+    .tabs {
+      position: sticky;
+      top: var(--topbar-h);
+      z-index: 30;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 10px 20px 12px;
+      background: rgba(242,236,224,0.88);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .tab {
+      padding: 10px 4px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: var(--ink-2);
+      background: transparent;
+      transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .tab.is-active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    /* ── Listing cards ────────────────────────────────────────────────── */
+    .cards { padding: 18px 18px 10px; display: flex; flex-direction: column; gap: 18px; }
+    .cards--paged { padding-bottom: 10px; }
+    .card {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--rule-soft);
+      border-radius: 24px;
+      box-shadow: 0 16px 34px rgba(33,50,58,0.10);
+    }
+    .card__media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #E7F0EF;
+    }
+    .card__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .card:active .card__media img { transform: scale(1.02); }
+    .card__index {
+      position: absolute;
+      top: 12px; left: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      min-height: 36px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(28,39,48,0.88);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+    .card__badge {
+      position: absolute;
+      top: 12px; right: 12px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: none;
+      background: rgba(0,169,120,0.92);
+      color: #fff;
+      padding: 6px 9px;
+      border-radius: 999px;
+    }
+    .card__temp {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      max-width: calc(100% - 24px);
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink-2);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .card__body { padding: 16px 16px 15px; }
+    .card__name {
+      font-family: var(--sans);
+      font-weight: 950;
+      font-size: 22px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+    .card__area {
+      margin-top: 5px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--ink-mute);
+    }
+    .card__meta-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .status-chip--verified { background: #EAF8F4; color: var(--sea-ink); }
+    .status-chip--draft { background: #FFF7E6; color: #7B5B12; }
+    .status-chip--demo { background: #EEF4FF; color: #255FA8; }
+    .status-chip--temp { background: #F2F5F5; color: var(--ink-mute); }
+    .status-chip--info { background: #F2F5F5; color: var(--ink-2); }
+    .card__tagline { margin-top: 7px; color: var(--ink-2); font-size: 13.5px; line-height: 1.5; }
+    .card__foot {
+      margin-top: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .card__price {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      min-width: 0;
+      padding: 7px 10px;
+      border-radius: 13px;
+      background: #EAF8F4;
+      color: var(--sea-ink);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.05;
+    }
+    .card__price small {
+      color: var(--ink-mute);
+      font-size: 10px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .card__more {
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 13px;
+      background: var(--sea);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex: 0 0 auto;
+    }
+    .card__more .arrow { transition: transform .25s ease; }
+    .card:hover .card__more .arrow { transform: translateX(3px); }
+    .pagination {
+      padding: 4px 20px 112px;
+      display: grid;
+      grid-template-columns: 44px 1fr 44px;
+      align-items: center;
+      gap: 10px;
+    }
+    .page-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--ink);
+      color: var(--paper);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .page-btn:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+    .page-count {
+      min-height: 44px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.68);
+      color: var(--ink-2);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    /* ── Detail screen ────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: var(--ink);
+      overflow: hidden;
+    }
+    .hero img { width: 100%; height: 100%; object-fit: cover; }
+    .hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.30) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.10) 60%, rgba(0,0,0,0.72) 100%);
+      pointer-events: none;
+    }
+    .hero__back {
+      position: absolute;
+      top: 14px; left: 14px;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .hero__overlay { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 1; color: var(--paper); }
+    .hero__badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: var(--clay);
+      color: var(--paper);
+      padding: 5px 10px;
+      border-radius: 999px;
+      margin-bottom: 9px;
+    }
+    .hero__name {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(28px, 8vw, 36px);
+      line-height: 1.05;
+      letter-spacing: -0.012em;
+    }
+    .hero__tagline { margin-top: 6px; font-size: 13.5px; line-height: 1.45; color: rgba(255,255,255,0.85); max-width: 38ch; }
+    .detail-back-wrap {
+      position: fixed;
+      top: calc(var(--topbar-h) + 10px);
+      left: max(14px, calc((100vw - 460px) / 2 + 14px));
+      z-index: 90;
+      pointer-events: none;
+    }
+    .detail-back {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 38px;
+      padding: 0 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.94);
+      color: var(--ink);
+      box-shadow: 0 8px 18px rgba(23,22,20,0.14);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .detail-body { padding: 6px 20px 0; }
+
+    /* Editorial info rows */
+    .info-list { margin-top: 14px; }
+    .info-row {
+      display: grid;
+      grid-template-columns: 86px 1fr;
+      gap: 14px;
+      align-items: baseline;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .info-row .v { font-size: 14px; color: var(--ink); line-height: 1.45; }
+
+    .maps-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .maps-row .t { font-family: var(--serif); font-size: 18px; letter-spacing: -0.005em; margin-top: 3px; }
+    .maps-row .go {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--sea);
+      border: 1px solid var(--sea);
+      border-radius: 999px;
+      padding: 8px 13px;
+      white-space: nowrap;
+    }
+
+    .social-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 4px; }
+    .social-row a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--ink-2);
+    }
+    .social-row a:active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+    /* Sections */
+    .dsection { margin-top: 30px; }
+    .dsection__head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 4px;
+    }
+    .dsection__title {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 23px;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    /* Rooms */
+    .room-item { padding: 16px 0; border-bottom: 1px solid var(--rule-soft); }
+    .room-item__main { display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: start; }
+    .room-item__thumb {
+      position: relative;
+      display: block;
+      width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+      padding: 0;
+      border: 0;
+      border-radius: var(--r-sm);
+      background: var(--bone-2);
+      cursor: zoom-in;
+    }
+    .room-item__thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .room-item__thumb:focus-visible { outline: 3px solid rgba(0,168,122,0.38); outline-offset: 3px; }
+    .room-item__head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+    .room-item__name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; line-height: 1.15; }
+    .room-item__price { text-align: right; white-space: nowrap; }
+    .room-item__price .amount { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
+    .room-item__price .amount .currency { font-size: 0.6em; vertical-align: 0.35em; margin-right: 1px; color: var(--ink-mute); }
+    .room-item__price .note {
+      display: block;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-top: 3px;
+    }
+    .room-item__cap { margin-top: 4px; font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
+    .room-item__extra { margin-top: 2px; font-size: 12px; color: var(--ink-mute); }
+    .rates {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--rule-soft);
+    }
+    .rates > div { padding: 9px 8px 0 0; }
+    .rates .l {
+      display: block;
+      font-family: var(--mono);
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+      margin-bottom: 2px;
+    }
+    .rates .v { font-size: 14px; color: var(--ink); }
+
+    /* Menu */
+    .menu-item {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--rule-soft);
+    }
+    .menu-item__thumb { aspect-ratio: 1; overflow: hidden; border-radius: var(--r-sm); background: var(--bone-2); }
+    .menu-item__thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .menu-item__name { font-family: var(--serif); font-size: 18px; letter-spacing: -0.005em; line-height: 1.15; }
+    .menu-item__detail { margin-top: 3px; font-size: 12.5px; color: var(--ink-mute); line-height: 1.45; }
+
+    /* Dash lists (highlights / facilities) */
+    .dash-list { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; padding-top: 12px; }
+    .dash-list li {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      line-height: 1.4;
+    }
+    .dash-list li::before {
+      content: "";
+      width: 14px;
+      height: 1px;
+      background: var(--clay);
+      flex: 0 0 auto;
+      transform: translateY(-4px);
+    }
+
+    /* Gallery */
+    .gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-top: 14px; }
+    .gallery-grid button {
+      overflow: hidden;
+      border-radius: var(--r-sm);
+      background: var(--bone-2);
+      aspect-ratio: 1;
+      padding: 0;
+    }
+    .gallery-grid button:first-child { grid-column: span 2; aspect-ratio: 16 / 10; }
+    .gallery-grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
+    .gallery-grid button:active img { transform: scale(1.03); }
+
+    /* Notes */
+    .notes {
+      margin-top: 30px;
+      background: var(--paper);
+      border: 1px solid var(--rule-soft);
+      border-radius: var(--r-md);
+      padding: 15px 16px;
+    }
+    .notes p { font-size: 12.5px; line-height: 1.55; color: var(--ink-mute); }
+    .notes p + p { margin-top: 6px; }
+
+    /* Sticky actions */
+    .actions {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 460px;
+      z-index: 50;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      background: rgba(251,247,238,0.92);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid var(--rule-soft);
+    }
+    .detail-pad { padding-bottom: 96px; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: rgba(23,22,20,0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      animation: lbIn .25s ease both;
+    }
+    @keyframes lbIn { from { opacity: 0; } to { opacity: 1; } }
+    .lightbox img { max-width: 100%; max-height: 78svh; object-fit: contain; border-radius: var(--r-sm); }
+    .lightbox__close {
+      position: absolute;
+      top: 18px; right: 18px;
+      width: 40px; height: 40px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 999px;
+      color: var(--paper);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .lightbox__nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px; height: 42px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 999px;
+      color: var(--paper);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .lightbox__nav--prev { left: 14px; }
+    .lightbox__nav--next { right: 14px; }
+    .lightbox__count {
+      position: absolute;
+      bottom: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 36px;
+      padding: 20px 20px calc(24px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--rule-soft);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-mute);
+    }
+    .footer a { border-bottom: 1px solid var(--rule); padding-bottom: 2px; }
+
+    /* App-style refresh inspired by the travel mockup */
+    :root {
+      --bone: #E8F4F3;
+      --bone-2: #D7E9E7;
+      --paper: #FFFFFF;
+      --ink: #21323A;
+      --ink-2: #51666D;
+      --ink-mute: #8BA0A4;
+      --rule: rgba(33,50,58,0.12);
+      --rule-soft: rgba(33,50,58,0.08);
+      --sea: #00A978;
+      --sea-ink: #04785E;
+      --clay: #2F80ED;
+      --clay-ink: #1E5FB6;
+      --sand: #FFD166;
+      --serif: "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --sans: "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      --r-sm: 14px;
+      --r-md: 18px;
+      --topbar-h: 66px;
+      --shadow: 0 18px 40px rgba(33,50,58,0.13);
+    }
+    body {
+      background:
+        radial-gradient(circle at 18% 12%, rgba(255,255,255,0.78), rgba(255,255,255,0) 28%),
+        linear-gradient(180deg, #DDEFF0 0%, #ECF6F4 100%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .frame {
+      max-width: 390px;
+      min-height: calc(100svh - 40px);
+      margin: 20px auto;
+      background: var(--paper);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(33,50,58,0.16);
+    }
+    @media (max-width: 520px) {
+      .frame {
+        max-width: none;
+        min-height: 100svh;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+    .mono-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--ink-mute);
+      font-weight: 700;
+    }
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--sea-ink);
+      font-weight: 800;
+    }
+    .eyebrow .dot { background: var(--sea); }
+    .btn {
+      min-height: 48px;
+      border-radius: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+      border: 0;
+    }
+    .btn--clay, .btn--sea { background: var(--sea); color: #fff; }
+    .btn--clay:active, .btn--clay:hover, .btn--sea:active, .btn--sea:hover { background: var(--sea-ink); }
+    .btn--ghost {
+      background: #F3F8F7;
+      color: var(--ink);
+      border: 1px solid var(--rule-soft);
+    }
+    .qr-screen {
+      background:
+        linear-gradient(180deg, rgba(232,244,243,0.92), rgba(255,255,255,0.98)),
+        url("assets/penginapan/d-nelayan/hero.jpg") center/cover;
+      color: var(--ink);
+      padding: 26px 24px calc(28px + env(safe-area-inset-bottom));
+    }
+    .qr-screen__head, .qr-screen__foot { border-color: var(--rule-soft); }
+    .qr-screen__brand {
+      font-family: var(--sans);
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--sea-ink);
+    }
+    .qr-screen__head .mono-label, .qr-screen__foot { color: var(--ink-mute); }
+    .qr-screen__body {
+      justify-content: flex-end;
+      gap: 18px;
+      padding-top: 90px;
+    }
+    .qr-screen__eyebrow { color: var(--sea-ink); }
+    .qr-screen__title {
+      font-family: var(--sans);
+      font-size: clamp(34px, 10vw, 43px);
+      font-weight: 900;
+      line-height: 1.06;
+      letter-spacing: 0;
+      max-width: 9.5em;
+    }
+    .qr-screen__title em { color: var(--sea); font-style: normal; }
+    .qr-screen__sub { color: var(--ink-2); font-weight: 650; }
+    .qr-plate {
+      width: 160px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+    .qr-plate__grid span { border-radius: 4px; }
+    .topbar {
+      height: var(--topbar-h);
+      padding: 0 18px;
+      background: rgba(255,255,255,0.94);
+      border-bottom: 0;
+    }
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink-2);
+      background: #F4F9F8;
+    }
+    .topbar__brand {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.05;
+    }
+    .topbar__brand .name {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--sea-ink);
+    }
+    .topbar__brand .sub {
+      margin-top: 3px;
+      font-family: var(--sans);
+      font-size: 10.5px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--ink-mute);
+      font-weight: 700;
+    }
+    .topbar__pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 46px;
+      height: 36px;
+      border-radius: 12px;
+      background: var(--sea);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 900;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .topbar__pill:active {
+      background: var(--sea-ink);
+    }
+    .tabs {
+      position: static;
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 4px 20px 12px;
+      background: var(--paper);
+      border-bottom: 0;
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab {
+      flex: 0 0 auto;
+      min-width: 94px;
+      padding: 10px 13px;
+      background: #F4F9F8;
+      border: 1px solid transparent;
+      border-radius: 14px;
+      color: var(--ink-2);
+      font-size: 12.5px;
+      font-weight: 850;
+      letter-spacing: 0;
+    }
+    .tab.is-active {
+      background: var(--sea);
+      border-color: var(--sea);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(0,169,120,0.24);
+    }
+    .dir-head { padding: 14px 22px 12px; }
+    .dir-head h1 {
+      font-family: var(--sans);
+      font-size: clamp(29px, 8vw, 35px);
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: 0;
+      margin: 8px 0 7px;
+      max-width: 10.5em;
+    }
+    .dir-head p {
+      color: var(--ink-2);
+      font-size: 13.5px;
+      font-weight: 650;
+    }
+    .category-notice {
+      margin: 0 20px 10px;
+      padding: 11px 13px;
+      border-radius: 16px;
+      background: #FFF7E6;
+      color: #7B5B12;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .directory-tools {
+      margin: 0 20px 12px;
+      display: grid;
+      gap: 10px;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 16px;
+      padding: 0 14px 0 40px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 750;
+      outline: 0;
+      box-shadow: 0 10px 24px rgba(33,50,58,0.06);
+    }
+    .search-box input::placeholder {
+      color: var(--ink-mute);
+      font-weight: 700;
+    }
+    .search-box__icon {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--ink-mute);
+      pointer-events: none;
+    }
+    .tools-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+    }
+    .sort-select {
+      min-width: 148px;
+      min-height: 38px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 13px;
+      padding: 0 30px 0 12px;
+      background: #F4F9F8;
+      color: var(--ink-2);
+      font-family: var(--sans);
+      font-size: 11.5px;
+      font-weight: 900;
+      outline: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+      background-position: calc(100% - 17px) 16px, calc(100% - 12px) 16px;
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+    }
+    .result-summary {
+      color: var(--ink-mute);
+      font-size: 11.5px;
+      font-weight: 850;
+      line-height: 1.3;
+    }
+    .reset-btn {
+      min-height: 38px;
+      border-radius: 13px;
+      padding: 0 12px;
+      background: #FFF7E6;
+      color: #7B5B12;
+      font-size: 11.5px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .stay-filters {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 20px 12px;
+      scrollbar-width: none;
+    }
+    .stay-filters::-webkit-scrollbar { display: none; }
+    .area-filters {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 20px 14px;
+      scrollbar-width: none;
+    }
+    .area-filters::-webkit-scrollbar { display: none; }
+    .filter-chip {
+      flex: 0 0 auto;
+      min-height: 34px;
+      padding: 8px 12px;
+      border-radius: 13px;
+      background: #F4F9F8;
+      color: var(--ink-2);
+      font-size: 11.5px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .filter-chip--area {
+      background: #F8F5EE;
+    }
+    .filter-chip.is-active {
+      background: var(--sea);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(0,169,120,0.22);
+    }
+    .cards {
+      padding: 12px 16px 92px;
+      gap: 16px;
+    }
+    .cards--paged { padding-bottom: 10px; }
+    .card {
+      display: block;
+      width: 100%;
+      min-height: 0;
+      padding: 0;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--rule-soft);
+      border-radius: 24px;
+      box-shadow: 0 16px 32px rgba(33,50,58,0.10);
+    }
+    .card__media {
+      aspect-ratio: 16 / 9;
+      height: auto;
+      border-radius: 0;
+      background: #E7F0EF;
+    }
+    .card__index {
+      display: inline-flex;
+      top: 12px;
+      left: 12px;
+      min-width: 42px;
+      min-height: 35px;
+      padding: 7px 11px;
+      background: rgba(28,39,48,0.88);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: 0;
+    }
+    .card__badge {
+      top: 12px;
+      right: 12px;
+      background: rgba(0,169,120,0.92);
+      color: #fff;
+      padding: 6px 9px;
+      font-size: 11px;
+      letter-spacing: 0;
+      text-transform: none;
+      font-family: var(--sans);
+      font-weight: 900;
+    }
+    .card__temp {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      max-width: calc(100% - 24px);
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink-2);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .card__body {
+      min-width: 0;
+      padding: 15px 15px 14px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card__name {
+      font-family: var(--sans);
+      font-size: 21px;
+      font-weight: 950;
+      line-height: 1.12;
+      letter-spacing: 0;
+      color: var(--ink);
+    }
+    .card__area {
+      margin-top: 5px;
+      font-size: 13px;
+      font-weight: 750;
+      color: var(--ink-mute);
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+    }
+    .card__meta-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      font-size: 10.5px;
+      font-weight: 900;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .status-chip--verified { background: #EAF8F4; color: var(--sea-ink); }
+    .status-chip--draft { background: #FFF7E6; color: #7B5B12; }
+    .status-chip--demo { background: #EEF4FF; color: #255FA8; }
+    .status-chip--temp { background: #F2F5F5; color: var(--ink-mute); }
+    .status-chip--info { background: #F2F5F5; color: var(--ink-2); }
+    .card__tagline {
+      margin-top: 6px;
+      color: var(--ink-2);
+      font-size: 11.5px;
+      font-weight: 650;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card__foot {
+      margin-top: 13px;
+      padding-top: 0;
+      border-top: 0;
+      gap: 12px;
+    }
+    .card__price {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      max-width: 62%;
+      padding: 7px 10px;
+      border-radius: 13px;
+      background: #EAF8F4;
+      color: var(--sea-ink);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-transform: none;
+      line-height: 1.05;
+    }
+    .card__price small {
+      color: var(--ink-mute);
+      font-size: 10px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .card__more {
+      width: auto;
+      min-width: 42px;
+      height: 38px;
+      padding: 0 12px;
+      border-radius: 13px;
+      background: var(--sea);
+      color: #fff;
+      justify-content: center;
+      flex: 0 0 auto;
+      font-size: 0;
+      gap: 0;
+    }
+    .card__more .arrow { font-size: 16px; }
+    .pagination {
+      padding: 2px 18px 104px;
+      grid-template-columns: 40px 1fr 40px;
+    }
+    .page-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+      background: var(--sea);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(0,169,120,0.22);
+    }
+    .page-count {
+      min-height: 40px;
+      border-radius: 13px;
+      background: #F4F9F8;
+      font-size: 11.5px;
+      font-weight: 900;
+    }
+    .detail-back-wrap {
+      top: calc(var(--topbar-h) + 8px);
+      left: max(18px, calc((100vw - 460px) / 2 + 18px));
+    }
+    .detail-back {
+      min-height: 38px;
+      border-radius: 13px;
+      font-size: 12px;
+      font-weight: 900;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 8px 18px rgba(33,50,58,0.12);
+    }
+    .hero {
+      margin: 0 16px;
+      aspect-ratio: 1.08;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero::after {
+      background: linear-gradient(180deg, rgba(0,0,0,0.16) 0%, rgba(0,0,0,0.04) 38%, rgba(0,0,0,0.72) 100%);
+    }
+    .hero__back {
+      top: 13px;
+      left: 13px;
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      justify-content: center;
+      background: rgba(255,255,255,0.92);
+      border-radius: 13px;
+      font-size: 0;
+      box-shadow: 0 8px 18px rgba(33,50,58,0.12);
+    }
+    .hero__overlay { left: 18px; right: 18px; bottom: 58px; }
+    .hero__badge {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 900;
+      backdrop-filter: blur(10px);
+    }
+    .hero__status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 9px;
+    }
+    .hero__status-row .hero__badge { margin-bottom: 0; }
+    .hero__temp {
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      z-index: 2;
+      padding: 8px 10px;
+      border-radius: 13px;
+      background: rgba(255,255,255,0.92);
+      color: var(--ink-2);
+      font-size: 10.5px;
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(33,50,58,0.12);
+    }
+    .hero__name {
+      font-family: var(--sans);
+      font-size: clamp(25px, 7vw, 31px);
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .hero__tagline { font-size: 13px; font-weight: 650; color: rgba(255,255,255,0.86); }
+    .metric-strip {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: -24px 24px 18px;
+    }
+    .metric-card {
+      min-height: 68px;
+      padding: 10px 6px;
+      border-radius: 17px;
+      background: rgba(255,255,255,0.96);
+      border: 1px solid var(--rule-soft);
+      box-shadow: 0 12px 24px rgba(33,50,58,0.08);
+      text-align: center;
+    }
+    .metric-card__icon {
+      width: 25px;
+      height: 25px;
+      margin: 0 auto 5px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #EAF8F4;
+      color: var(--sea);
+    }
+    .metric-card__value {
+      display: block;
+      color: var(--ink);
+      font-size: 10.8px;
+      font-weight: 900;
+      line-height: 1.12;
+      overflow-wrap: anywhere;
+    }
+    .metric-card__label {
+      display: block;
+      margin-top: 3px;
+      color: var(--ink-mute);
+      font-size: 9px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    .detail-body { padding: 0 20px; }
+    .social-row {
+      gap: 7px;
+      margin: 8px 0 7px;
+    }
+    .social-row a {
+      background: #F5FAF9;
+      border-color: transparent;
+      border-radius: 13px;
+      padding: 9px 11px;
+      font-weight: 850;
+    }
+    .info-list {
+      margin-top: 10px;
+      background: #F7FBFA;
+      border-radius: 18px;
+      padding: 3px 13px;
+    }
+    .contact-notice {
+      margin: 10px 0 0;
+      padding: 12px 13px;
+      border-radius: 16px;
+      background: #FFF7E6;
+      color: #7B5B12;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .info-row {
+      grid-template-columns: 72px 1fr;
+      padding: 12px 0;
+    }
+    .maps-row {
+      border-bottom: 0;
+      padding: 12px 0 13px;
+    }
+    .maps-row .t {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    .maps-row .go {
+      border: 0;
+      background: var(--sea);
+      color: #fff;
+      border-radius: 12px;
+      font-weight: 900;
+    }
+    .dsection { margin-top: 24px; }
+    .dsection__head {
+      border-bottom: 0;
+      padding-bottom: 8px;
+      margin-bottom: 0;
+    }
+    .dsection__title {
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+    .room-item {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 18px;
+      background: var(--paper);
+      box-shadow: 0 12px 24px rgba(33,50,58,0.07);
+    }
+    .room-item__main {
+      grid-template-columns: 76px minmax(0, 1fr);
+      gap: 11px;
+    }
+    .room-item__thumb { border-radius: 14px; background: #E7F0EF; }
+    .room-item__head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
+      gap: 8px;
+    }
+    .room-item__name {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      font-weight: 900;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+    .room-item__price {
+      min-width: 82px;
+      padding: 6px 8px;
+      border-radius: 12px;
+      background: #EAF8F4;
+      color: var(--sea-ink);
+      white-space: normal;
+    }
+    .room-item__price .amount {
+      display: block;
+      font-family: var(--sans);
+      font-size: 11.5px;
+      font-weight: 950;
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+    .room-item__price .note {
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--ink-mute);
+      font-weight: 800;
+      line-height: 1.08;
+    }
+    .room-item__cap {
+      margin-top: 5px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ink-2);
+    }
+    .room-item__extra { font-size: 11px; }
+    .rates {
+      margin-top: 10px;
+      gap: 6px;
+      border-top: 0;
+    }
+    .rates > div {
+      padding: 8px 7px;
+      border-radius: 12px;
+      background: #F5FAF9;
+    }
+    .rates .l {
+      font-family: var(--sans);
+      font-size: 9px;
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 800;
+    }
+    .rates .v {
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .menu-item {
+      margin-top: 10px;
+      padding: 9px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 12px 24px rgba(33,50,58,0.07);
+    }
+    .menu-item__thumb { border-radius: 14px; }
+    .menu-item__name {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 900;
+    }
+    .dash-list {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding-top: 8px;
+    }
+    .dash-list li {
+      padding: 10px 12px;
+      border-radius: 13px;
+      background: #F5FAF9;
+      font-size: 12.5px;
+      font-weight: 750;
+    }
+    .dash-list li::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--sea);
+      transform: none;
+    }
+    .gallery-grid { gap: 8px; }
+    .gallery-grid button { border-radius: 16px; }
+    .notes {
+      background: #F5FAF9;
+      border: 0;
+      border-radius: 18px;
+    }
+    .actions {
+      bottom: 16px;
+      width: calc(100% - 32px);
+      max-width: 358px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 18px;
+      padding: 8px;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 16px 36px rgba(33,50,58,0.16);
+    }
+    .actions .btn { min-height: 46px; }
+    .actions--single { grid-template-columns: 1fr; }
+    .detail-pad { padding-bottom: 112px; }
+    .bottom-nav {
+      position: fixed;
+      left: 50%;
+      bottom: 16px;
+      transform: translateX(-50%);
+      z-index: 45;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      width: calc(100% - 32px);
+      max-width: 358px;
+      padding: 8px;
+      border: 1px solid var(--rule-soft);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 16px 36px rgba(33,50,58,0.16);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+    .bottom-nav button {
+      min-height: 44px;
+      border-radius: 13px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--ink-mute);
+      font-size: 11px;
+      font-weight: 900;
+    }
+    .bottom-nav button.is-active {
+      background: #EAF8F4;
+      color: var(--sea-ink);
+    }
+    .footer {
+      margin-top: 24px;
+      padding-bottom: calc(108px + env(safe-area-inset-bottom));
+      border-top-color: var(--rule-soft);
+      letter-spacing: 0;
+      text-transform: none;
+      font-family: var(--sans);
+      font-weight: 800;
+      font-size: 11px;
+    }
+    .empty-state {
+      margin: 0 20px 92px;
+      padding: 18px;
+      border-radius: 18px;
+      background: #F5FAF9;
+      color: var(--ink-2);
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script>
+  (() => {
+    var { useEffect, useState } = React;
+    var h = React.createElement;
+    var CATEGORIES = [
+      { id: "penginapan", label: "Penginapan", title: "Penginapan", subtitle: "Resort dan chalet sekitar Masjid Tanah" },
+      { id: "makanan", label: "Makanan", title: "Makanan", subtitle: "Contoh data demo untuk pelawat pantai", demo: true },
+      { id: "aktiviti", label: "Aktiviti", title: "Lawatan / Aktiviti", subtitle: "Contoh data demo untuk tempat singgah berhampiran", demo: true }
+    ];
+    var LISTINGS = { "penginapan": [], "makanan": [], "aktiviti": [] };
+    var PAGE_SIZE = 10;
+    var FEATURED_ORDER = ["d-nelayan", "riang-ria", "kemunting", "adi-village"];
+    var AREA_FILTERS = [
+      { id: "all", label: "Semua kawasan" },
+      { id: "pantai-pengkalan-balak", label: "Pantai Pengkalan Balak" },
+      { id: "pantai-sungai-tuang", label: "Pantai Sungai Tuang" },
+      { id: "pantai-telok-gong", label: "Pantai Telok Gong" },
+      { id: "pantai-kuala-sungai-baru", label: "Pantai Kuala Sungai Baru" }
+    ];
+    var SORT_OPTIONS = [
+      { id: "featured", label: "Rawak · adil" },
+      { id: "verified", label: "Disahkan dulu" },
+      { id: "area", label: "Kawasan" },
+      { id: "price-low", label: "Harga rendah" },
+      { id: "rooms-high", label: "Bilik terbanyak" },
+      { id: "name", label: "Nama A-Z" }
+    ];
+    var pad2 = (index) => String(index + 1).padStart(2, "0");
+    var formatMoney = (value) => "RM" + Number(value || 0).toLocaleString("ms-MY");
+    var normalizeListings = (input) => CATEGORIES.reduce((next, cat) => {
+      next[cat.id] = Array.isArray(input && input[cat.id])
+        ? input[cat.id].map((item) => ({ ...item, category: cat.id }))
+        : [];
+      return next;
+    }, {});
+    var hasContact = (item) => Boolean(item && (item.whatsapp || item.phone));
+    var hasTemporaryImage = (item) => item && (item.imageStatus === "temporary" || String(item.hero || "").includes("placeholder"));
+    var statusMap = {
+      disahkan: { label: "Disahkan", className: "status-chip--verified" },
+      "data-awal": { label: "Data awal", className: "status-chip--draft" },
+      demo: { label: "Demo", className: "status-chip--demo" }
+    };
+    var getStatusInfo = (item) => {
+      const key = item.status || (item.category !== "penginapan" ? "demo" : hasTemporaryImage(item) ? "data-awal" : "disahkan");
+      return statusMap[key] || statusMap["data-awal"];
+    };
+    var getStayType = (item) => {
+      const text = (item.badge || item.name || "").toLowerCase();
+      if (text.includes("homestay")) return "homestay";
+      if (text.includes("chalet")) return "chalet";
+      if (text.includes("resort")) return "resort";
+      return "lain";
+    };
+    var getFallbackPriceMeta = (label) => {
+      const text = (label || "").toLowerCase();
+      if (text.includes("website")) return "rujuk website";
+      if (text.includes("resort")) return "rujuk resort";
+      if (text.includes("operator")) return "rujuk operator";
+      if (text.includes("kontak")) return "kontak belum lengkap";
+      if (text.includes("hubungi") || text.includes("semak")) return "hubungi pengusaha";
+      return label || "semak dahulu";
+    };
+    var getListingPrice = (item) => {
+      if (item.category === "penginapan") {
+        const roomPrices = (item.rooms || []).map((room) => room.priceFrom).filter(Boolean);
+        if (roomPrices.length) return { label: "Dari " + formatMoney(Math.min(...roomPrices)), meta: "semalam" };
+        if (!hasContact(item)) return { label: "Harga belum ada", meta: "kontak belum lengkap" };
+        const meta = getFallbackPriceMeta(item.priceLabel);
+        return { label: meta === "hubungi pengusaha" ? "Tanya harga" : "Semak harga", meta };
+      }
+      return { label: item.priceLabel || "Lihat info", meta: item.badge || "Butiran" };
+    };
+    var getRoomPrice = (entry) => entry.priceFrom
+      ? { label: "Dari " + formatMoney(entry.priceFrom), meta: "semalam" }
+      : { label: "Semak harga", meta: getFallbackPriceMeta(entry.priceLabel) };
+    var uniqueImages = (images) => [...new Set((images || []).filter(Boolean))];
+    var getGalleryImages = (item) => uniqueImages(item.gallery && item.gallery.length ? item.gallery : [item.hero]);
+    var getRoomPhotos = (entry) => uniqueImages([entry.thumb, ...(Array.isArray(entry.photos) ? entry.photos : [])]);
+    var getListingCount = (item) => {
+      if (item.roomCount) return item.roomCount + " bilik";
+      if (item.rooms) return item.rooms.length + " bilik";
+      if (item.menu) return item.menu.length + " menu";
+      if (item.highlights) return item.highlights.length + " info";
+      return item.badge || "Info";
+    };
+    var getMinRoomPrice = (item) => {
+      const prices = (item.rooms || []).map((room) => Number(room.priceFrom)).filter(Boolean);
+      return prices.length ? Math.min(...prices) : 999999;
+    };
+    var getFeaturedRank = (item) => {
+      const index = FEATURED_ORDER.indexOf(item.id);
+      return index === -1 ? 999 : index;
+    };
+    var getAreaInfo = (item) => AREA_FILTERS.find((area) => area.id === item.areaGroup) || AREA_FILTERS.find((area) => area.label === item.area) || AREA_FILTERS[1];
+    var getAreaRank = (item) => {
+      const area = getAreaInfo(item);
+      const index = AREA_FILTERS.findIndex((entry) => entry.id === area.id);
+      return index === -1 ? 999 : index;
+    };
+    var getSearchText = (item) => [
+      item.name,
+      item.badge,
+      item.area,
+      item.areaGroup,
+      item.address,
+      item.owner,
+      item.memberNo
+    ].filter(Boolean).join(" ").toLowerCase();
+    // Susunan rawak adil: setiap item dapat kunci rawak sekali per page-load
+    // (stabil sepanjang sesi, berubah setiap kali QR discan / page reload),
+    // supaya setiap penginapan/kedai dapat giliran di atas secara adil.
+    var FAIR_RANK = {};
+    var getFairRank = (item) => {
+      const key = item.id || item.name;
+      if (!(key in FAIR_RANK)) FAIR_RANK[key] = Math.random();
+      return FAIR_RANK[key];
+    };
+    var fairOrder = (items) => [...items].sort((a, b) => getFairRank(a) - getFairRank(b));
+    var sortListings = (items, sortBy) => [...items].sort((a, b) => {
+      if (sortBy === "verified") {
+        const statusRank = (item) => item.status === "disahkan" ? 0 : item.status === "data-awal" ? 1 : 2;
+        return statusRank(a) - statusRank(b) || getFeaturedRank(a) - getFeaturedRank(b) || a.name.localeCompare(b.name);
+      }
+      if (sortBy === "area") return getAreaRank(a) - getAreaRank(b) || getFeaturedRank(a) - getFeaturedRank(b) || a.name.localeCompare(b.name);
+      if (sortBy === "price-low") return getMinRoomPrice(a) - getMinRoomPrice(b) || getFeaturedRank(a) - getFeaturedRank(b);
+      if (sortBy === "rooms-high") return (Number(b.roomCount) || (b.rooms || []).length || 0) - (Number(a.roomCount) || (a.rooms || []).length || 0) || getFeaturedRank(a) - getFeaturedRank(b);
+      if (sortBy === "name") return a.name.localeCompare(b.name);
+      return getFairRank(a) - getFairRank(b);
+    });
+    var Icon = ({ type, size = 16 }) => {
+      const common = { width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round", strokeLinejoin: "round" };
+      if (type === "menu") return h("svg", { ...common }, h("path", { d: "M4 7h10" }), h("path", { d: "M4 12h16" }), h("path", { d: "M4 17h12" }));
+      if (type === "home") return h("svg", { ...common }, h("path", { d: "m3 11 9-8 9 8" }), h("path", { d: "M5 10v10h14V10" }), h("path", { d: "M9 20v-6h6v6" }));
+      if (type === "bed") return h("svg", { ...common }, h("path", { d: "M3 7v11" }), h("path", { d: "M21 11v7" }), h("path", { d: "M3 14h18" }), h("path", { d: "M7 11h4" }), h("path", { d: "M3 11h18" }));
+      if (type === "heart") return h("svg", { ...common }, h("path", { d: "M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" }));
+      if (type === "search") return h("svg", { ...common }, h("circle", { cx: "11", cy: "11", r: "7" }), h("path", { d: "m20 20-3.5-3.5" }));
+      if (type === "map") return h("svg", { ...common }, h("path", { d: "M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0Z" }), h("circle", { cx: "12", cy: "10", r: "3" }));
+      if (type === "phone") return h("svg", { ...common }, h("path", { d: "M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6.3 6.3l1.2-1.2a2 2 0 0 1 2.1-.4c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z" }));
+      if (type === "whatsapp") return h("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35ZM12.05 21.79h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.16 6.45 6.6 2.01 12.05 2.01c2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.88 9.89ZM20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.42Z" }));
+      if (type === "globe") return h("svg", { ...common }, h("circle", { cx: "12", cy: "12", r: "10" }), h("path", { d: "M2 12h20" }), h("path", { d: "M12 2a15.3 15.3 0 0 1 0 20" }), h("path", { d: "M12 2a15.3 15.3 0 0 0 0 20" }));
+      if (type === "back") return h("svg", { ...common }, h("path", { d: "M19 12H5" }), h("path", { d: "m12 19-7-7 7-7" }));
+      if (type === "external") return h("svg", { ...common }, h("path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" }), h("path", { d: "M15 3h6v6" }), h("path", { d: "m10 14 11-11" }));
+      if (type === "facebook") return h("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.02 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.88v2.27h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.09 24 12.07Z" }));
+      if (type === "tiktok") return h("svg", { width: size, height: size, viewBox: "0 0 24 24", fill: "currentColor" }, h("path", { d: "M16.2 2c.3 2.3 1.6 3.8 3.8 4v3.3a8.5 8.5 0 0 1-3.7-.9v6.4c0 4.1-2.7 6.9-6.6 6.9-3.4 0-5.7-2.2-5.7-5.2 0-3.2 2.5-5.5 6-5.5.5 0 .9.1 1.3.2v3.4a4 4 0 0 0-1.4-.3c-1.4 0-2.4.8-2.4 2s1 2 2.2 2c1.6 0 2.8-1 2.8-3.3V2h3.7Z" }));
+      return null;
+    };
+    var getSocialLinks = (item) => [
+      item.tiktok && { id: "tiktok", label: "TikTok", href: item.tiktok, icon: "tiktok" },
+      item.facebook && { id: "facebook", label: "Facebook", href: item.facebook, icon: "facebook" },
+      item.website && { id: "website", label: "Laman web", href: item.website, icon: "globe" }
+    ].filter(Boolean);
+
+    function QRScreen({ onScan }) {
+      return h("div", { className: "qr-screen screen" },
+        h("div", { className: "qr-screen__head" },
+          h("img", { className: "brand-logo-img qr-screen__logo", src: "assets/melakapedia-logo.png", alt: "Melakapedia" }),
+          h("span", { className: "mono-label" }, "Direktori QR")
+        ),
+        h("div", { className: "qr-screen__body" },
+          h("div", { className: "eyebrow qr-screen__eyebrow" }, h("span", { className: "dot" }), "Pantai Pengkalan Balak — Melaka"),
+          h("h1", { className: "qr-screen__title" }, "Penginapan, makanan ", h("em", null, "dan aktiviti"), " dalam satu imbasan."),
+          h("p", { className: "qr-screen__sub" }, "Imbas QR di chalet anda dan terus jumpa apa yang ada di sekitar pantai."),
+          h("div", { className: "qr-plate" },
+            h("div", { className: "qr-plate__grid" }, Array.from({ length: 49 }, (_, i) => {
+              const r = Math.floor(i / 7);
+              const c = i % 7;
+              const corner = r < 3 && c < 3 || r < 3 && c > 3 || r > 3 && c < 3;
+              const filled = corner || [10, 17, 24, 25, 31, 33, 38, 40, 46].includes(i);
+              return h("span", { key: i, style: { background: filled ? "#171614" : "#E9E1D0" } });
+            })),
+            h("div", { className: "qr-plate__cap" }, "Demo · Imbasan QR")
+          ),
+          h("div", null,
+            h("button", { className: "btn btn--clay", onClick: onScan }, "Simulasi scan QR", h("span", { className: "arrow", "aria-hidden": true }, "→"))
+          )
+        ),
+        h("div", { className: "qr-screen__foot" },
+          h("span", null, "melakapedia.my"),
+          h("span", null, "MY · 2026")
+        )
+      );
+    }
+
+    function TopBar({ onHome, onDemo }) {
+      return h("div", { className: "topbar" },
+        h("button", { className: "icon-btn", onClick: onHome, "aria-label": "Direktori utama" }, h(Icon, { type: "home", size: 17 })),
+        h("button", { className: "topbar__brand", onClick: onHome },
+          h("img", { className: "brand-logo-img topbar__logo", src: "assets/melakapedia-logo.png", alt: "Melakapedia" }),
+          h("span", { className: "sub" }, "Masjid Tanah · Melaka")
+        ),
+        h("button", { className: "topbar__pill", onClick: onDemo, "aria-label": "Kembali ke demo scan QR" }, "Demo")
+      );
+    }
+
+    function Tabs({ active, onChange }) {
+      return h("div", { className: "tabs" }, CATEGORIES.map((cat) =>
+        h("button", { key: cat.id, className: "tab" + (active === cat.id ? " is-active" : ""), onClick: () => onChange(cat.id) }, cat.label)
+      ));
+    }
+
+    function ListingCard({ item, index, onSelect }) {
+      const price = getListingPrice(item);
+      const status = getStatusInfo(item);
+      const count = getListingCount(item);
+      const showCount = item.category === "penginapan" && String(count).includes("bilik");
+      const contactText = item.whatsapp ? "WhatsApp" : item.phone ? "Telefon" : null;
+      return h("button", { className: "card", onClick: () => onSelect(item) },
+        h("div", { className: "card__media" },
+          h("img", { src: item.hero, alt: item.name, loading: index > 1 ? "lazy" : "eager", decoding: "async" }),
+          h("span", { className: "card__index" }, "#" + (index + 1)),
+          h("span", { className: "card__badge" }, item.badge),
+          hasTemporaryImage(item) && h("span", { className: "card__temp" }, "Gambar sementara")
+        ),
+        h("div", { className: "card__body" },
+          h("h3", { className: "card__name" }, item.name),
+          h("div", { className: "mono-label card__area" }, item.area),
+          h("div", { className: "card__meta-row" },
+            h("span", { className: "status-chip " + status.className }, status.label),
+            showCount && h("span", { className: "status-chip status-chip--info" }, count),
+            contactText && h("span", { className: "status-chip status-chip--info" }, contactText)
+          ),
+          h("div", { className: "card__foot" },
+            h("span", { className: "card__price" }, h("strong", null, price.label), h("small", null, price.meta)),
+            h("span", { className: "card__more" }, "Lihat butiran", h("span", { className: "arrow", "aria-hidden": true }, "→"))
+          )
+        )
+      );
+    }
+
+    function StayFilters({ active, onChange }) {
+      const filters = [
+        { id: "all", label: "Semua" },
+        { id: "resort", label: "Resort" },
+        { id: "chalet", label: "Chalet" },
+        { id: "homestay", label: "Homestay" }
+      ];
+      return h("div", { className: "stay-filters", "aria-label": "Filter jenis penginapan" }, filters.map((filter) =>
+        h("button", {
+          key: filter.id,
+          className: "filter-chip" + (active === filter.id ? " is-active" : ""),
+          onClick: () => onChange(filter.id)
+        }, filter.label)
+      ));
+    }
+
+    function AreaFilters({ active, onChange }) {
+      return h("div", { className: "area-filters", "aria-label": "Filter kawasan" }, AREA_FILTERS.map((filter) =>
+        h("button", {
+          key: filter.id,
+          className: "filter-chip filter-chip--area" + (active === filter.id ? " is-active" : ""),
+          onClick: () => onChange(filter.id)
+        }, filter.label)
+      ));
+    }
+
+    function DirectoryTools({ searchTerm, onSearch, sortBy, onSort, summary, onReset, canReset }) {
+      return h("div", { className: "directory-tools" },
+        h("label", { className: "search-box" },
+          h("span", { className: "search-box__icon" }, h(Icon, { type: "search", size: 15 })),
+          h("input", {
+            type: "search",
+            value: searchTerm,
+            onChange: (event) => onSearch(event.target.value),
+            placeholder: "Cari penginapan atau kawasan...",
+            "aria-label": "Cari penginapan atau kawasan"
+          })
+        ),
+        h("div", { className: "tools-line" },
+          h("select", {
+            className: "sort-select",
+            value: sortBy,
+            onChange: (event) => onSort(event.target.value),
+            "aria-label": "Susun penginapan"
+          }, SORT_OPTIONS.map((option) => h("option", { key: option.id, value: option.id }, option.label))),
+          canReset && h("button", { className: "reset-btn", onClick: onReset }, "Reset")
+        ),
+        h("div", { className: "result-summary" }, summary)
+      );
+    }
+
+    function BottomNav({ activeCategory, onChange }) {
+      const iconMap = { penginapan: "home", makanan: "heart", aktiviti: "search" };
+      return h("nav", { className: "bottom-nav", "aria-label": "Kategori utama" }, CATEGORIES.map((cat) =>
+        h("button", {
+          key: cat.id,
+          className: activeCategory === cat.id ? "is-active" : "",
+          onClick: () => onChange(cat.id)
+        }, h(Icon, { type: iconMap[cat.id], size: 16 }), h("span", null, cat.label))
+      ));
+    }
+
+    function Pagination({ page, totalPages, onPage }) {
+      if (totalPages <= 1) return null;
+      return h("div", { className: "pagination" },
+        h("button", {
+          className: "page-btn",
+          disabled: page <= 1,
+          onClick: () => onPage(page - 1),
+          "aria-label": "Halaman sebelumnya"
+        }, "‹"),
+        h("div", { className: "page-count" }, "Halaman ", page, " / ", totalPages),
+        h("button", {
+          className: "page-btn",
+          disabled: page >= totalPages,
+          onClick: () => onPage(page + 1),
+          "aria-label": "Halaman seterusnya"
+        }, "›")
+      );
+    }
+
+    function DirectoryScreen({ activeCategory, setActiveCategory, onSelect, listings, onDemo }) {
+      const [stayFilter, setStayFilter] = useState("all");
+      const [areaFilter, setAreaFilter] = useState("all");
+      const [searchTerm, setSearchTerm] = useState("");
+      const [sortBy, setSortBy] = useState("featured");
+      const [page, setPage] = useState(1);
+      const cat = CATEGORIES.find((entry) => entry.id === activeCategory) || CATEGORIES[0];
+      const items = listings && listings[activeCategory] || [];
+      useEffect(() => {
+        if (activeCategory !== "penginapan") {
+          setStayFilter("all");
+          setAreaFilter("all");
+        }
+      }, [activeCategory]);
+      useEffect(() => {
+        setPage(1);
+      }, [activeCategory, stayFilter, areaFilter, searchTerm, sortBy]);
+      const typedSearch = searchTerm.trim().toLowerCase();
+      const filteredItems = activeCategory === "penginapan" && stayFilter !== "all"
+        ? items.filter((item) => getStayType(item) === stayFilter)
+        : items;
+      const areaItems = activeCategory === "penginapan" && areaFilter !== "all"
+        ? filteredItems.filter((item) => getAreaInfo(item).id === areaFilter)
+        : filteredItems;
+      const searchedItems = typedSearch
+        ? areaItems.filter((item) => getSearchText(item).includes(typedSearch))
+        : areaItems;
+      const visibleItems = activeCategory === "penginapan"
+        ? sortListings(searchedItems, sortBy)
+        : fairOrder(searchedItems);
+      const shouldPaginate = activeCategory === "penginapan" && visibleItems.length > PAGE_SIZE;
+      const totalPages = shouldPaginate ? Math.ceil(visibleItems.length / PAGE_SIZE) : 1;
+      const currentPage = Math.min(page, totalPages);
+      const pageStart = shouldPaginate ? (currentPage - 1) * PAGE_SIZE : 0;
+      const pageItems = shouldPaginate ? visibleItems.slice(pageStart, pageStart + PAGE_SIZE) : visibleItems;
+      const pageEnd = shouldPaginate ? Math.min(pageStart + pageItems.length, visibleItems.length) : visibleItems.length;
+      const noun = activeCategory === "penginapan" ? "penginapan" : "item";
+      const summary = shouldPaginate
+        ? `${pageStart + 1}-${pageEnd} daripada ${visibleItems.length} ${noun}`
+        : `${visibleItems.length} ${noun} ditemui`;
+      const resetDirectoryTools = () => {
+        setStayFilter("all");
+        setAreaFilter("all");
+        setSearchTerm("");
+        setSortBy("featured");
+      };
+      const canReset = stayFilter !== "all" || areaFilter !== "all" || searchTerm || sortBy !== "featured";
+      const goPage = (nextPage) => {
+        setPage(Math.min(Math.max(nextPage, 1), totalPages));
+        requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+      };
+      return h("div", null,
+        h(TopBar, { onHome: () => setActiveCategory("penginapan"), onDemo }),
+        h(Tabs, { active: activeCategory, onChange: setActiveCategory }),
+        h("div", { className: "screen", key: activeCategory },
+          h("header", { className: "dir-head" },
+            h("div", { className: "eyebrow" }, h("span", { className: "dot" }), "Masjid Tanah — Melaka"),
+            h("h1", null, cat.title),
+            h("p", null, cat.subtitle)
+          ),
+          cat.demo && h("div", { className: "category-notice" }, "Kategori ini masih menggunakan data demo sementara maklumat sebenar dikumpulkan."),
+          activeCategory === "penginapan" && h(DirectoryTools, {
+            searchTerm,
+            onSearch: setSearchTerm,
+            sortBy,
+            onSort: setSortBy,
+            summary,
+            onReset: resetDirectoryTools,
+            canReset
+          }),
+          activeCategory === "penginapan" && h(StayFilters, { active: stayFilter, onChange: setStayFilter }),
+          activeCategory === "penginapan" && h(AreaFilters, { active: areaFilter, onChange: setAreaFilter }),
+          pageItems.length
+            ? h("div", { className: "cards" + (shouldPaginate ? " cards--paged" : "") }, pageItems.map((item, index) => h(ListingCard, { key: item.id, item, index: pageStart + index, onSelect })))
+            : h("div", { className: "empty-state" }, "Belum ada penginapan untuk filter ini."),
+          shouldPaginate && h(Pagination, { page: currentPage, totalPages, onPage: goPage }),
+          h(BottomNav, { activeCategory, onChange: setActiveCategory }),
+          h(Footer, null)
+        )
+      );
+    }
+
+    function InfoList({ item }) {
+      const status = getStatusInfo(item);
+      const rows = [["Status", status.label], ["Waktu", item.hours], ["Lokasi", item.area]];
+      if (item.owner) rows.push(["Pengusaha", item.owner]);
+      if (item.address) rows.push(["Alamat", item.address]);
+      if (item.ticket) rows.push(["Tiket", item.ticket]);
+      const mapLabel = item.mapsUrl && item.mapsUrl.includes("/maps/search") ? "Cari Google Maps" : "Google Maps";
+      return h("div", { className: "info-list" },
+        rows.map(([label, value]) => h("div", { className: "info-row", key: label },
+          h("span", { className: "mono-label" }, label),
+          h("span", { className: "v" }, value)
+        )),
+        h("a", { className: "maps-row", href: item.mapsUrl, target: "_blank", rel: "noreferrer" },
+          h("div", null,
+            h("span", { className: "mono-label" }, mapLabel),
+            h("div", { className: "t" }, item.name)
+          ),
+          h("span", { className: "go" }, "Buka", h(Icon, { type: "external", size: 13 }))
+        )
+      );
+    }
+
+    function ContactNotice({ item }) {
+      if (hasContact(item)) return null;
+      return h("div", { className: "contact-notice" }, "Kontak belum tersedia untuk listing ini. Data awal akan dilengkapkan selepas maklumat pengusaha disahkan.");
+    }
+
+    function SocialRow({ item }) {
+      const links = getSocialLinks(item);
+      if (!links.length) return null;
+      return h("div", { className: "social-row" }, links.map((link) =>
+        h("a", { key: link.id, href: link.href, target: "_blank", rel: "noreferrer" }, h(Icon, { type: link.icon, size: 14 }), link.label)
+      ));
+    }
+
+    function DSection({ title, index, children }) {
+      return h("section", { className: "dsection" },
+        h("div", { className: "dsection__head" },
+          h("h2", { className: "dsection__title" }, title),
+          h("span", { className: "mono-label" }, index)
+        ),
+        children
+      );
+    }
+
+    function MetricStrip({ item }) {
+      const price = getListingPrice(item);
+      const contactValue = item.whatsapp ? "WhatsApp" : item.phone ? "Telefon" : "Belum ada";
+      const contactLabel = item.whatsapp || item.phone ? "Hubungi" : "Kontak";
+      const countValue = getListingCount(item);
+      const countLabel = item.category === "penginapan"
+        ? String(countValue).includes("bilik") ? "Jumlah" : "Jenis"
+        : "Senarai";
+      const metrics = [
+        { icon: item.category === "penginapan" ? "bed" : "home", value: countValue, label: countLabel },
+        { icon: "heart", value: price.label, label: price.meta },
+        { icon: "map", value: item.area.replace("Pantai ", ""), label: "Lokasi" },
+        { icon: item.whatsapp ? "whatsapp" : "phone", value: contactValue, label: contactLabel }
+      ];
+      return h("div", { className: "metric-strip" }, metrics.map((metric) =>
+        h("div", { className: "metric-card", key: metric.label + metric.value },
+          h("span", { className: "metric-card__icon" }, h(Icon, { type: metric.icon, size: 14 })),
+          h("span", { className: "metric-card__value" }, metric.value),
+          h("span", { className: "metric-card__label" }, metric.label)
+        )
+      ));
+    }
+
+    function RoomsList({ item, onOpenRoomPhotos }) {
+      if (!item.rooms) return null;
+      return h(DSection, { title: "Bilik & harga", index: "01" }, item.rooms.map((entry) =>
+        {
+          const price = getRoomPrice(entry);
+          const photos = getRoomPhotos(entry);
+          const primaryPhoto = photos[0] || entry.thumb;
+          return h("div", { className: "room-item", key: entry.name },
+          h("div", { className: "room-item__main" },
+            h("button", {
+              className: "room-item__thumb",
+              type: "button",
+              onClick: () => photos.length && onOpenRoomPhotos(photos, 0),
+              "aria-label": "Buka gambar " + entry.name
+            },
+              h("img", { src: primaryPhoto, alt: entry.name, loading: "lazy", decoding: "async" })
+            ),
+            h("div", null,
+              h("div", { className: "room-item__head" },
+                h("h3", { className: "room-item__name" }, entry.name),
+                h("div", { className: "room-item__price" },
+                  h("span", { className: "amount" }, price.label),
+                  h("span", { className: "note" }, price.meta)
+                )
+              ),
+              h("p", { className: "room-item__cap" }, entry.capacity),
+              entry.extra ? h("p", { className: "room-item__extra" }, entry.extra) : null
+            )
+          ),
+          entry.weekday ? h("div", { className: "rates" },
+            h("div", null, h("span", { className: "l" }, "Biasa"), h("span", { className: "v" }, "RM", entry.weekday)),
+            h("div", null, h("span", { className: "l" }, "Minggu"), h("span", { className: "v" }, "RM", entry.weekend)),
+            h("div", null, h("span", { className: "l" }, "Super"), h("span", { className: "v" }, "RM", entry.superpeak))
+          ) : null
+        );
+        }
+      ));
+    }
+
+    function MenuList({ item }) {
+      if (!item.menu) return null;
+      return h(DSection, { title: "Menu popular", index: "01" }, item.menu.map((entry) =>
+        h("div", { className: "menu-item", key: entry.name },
+          h("div", { className: "menu-item__thumb" }, h("img", { src: entry.thumb, alt: entry.name, loading: "lazy", decoding: "async" })),
+          h("div", null,
+            h("h3", { className: "menu-item__name" }, entry.name),
+            h("p", { className: "menu-item__detail" }, entry.detail)
+          )
+        )
+      ));
+    }
+
+    function HighlightsList({ item }) {
+      if (!item.highlights) return null;
+      return h(DSection, { title: "Info aktiviti", index: "01" },
+        h("ul", { className: "dash-list" }, item.highlights.map((entry) => h("li", { key: entry }, entry)))
+      );
+    }
+
+    function CategoryDetail({ item, onOpenRoomPhotos }) {
+      if (item.category === "penginapan") return h(RoomsList, { item, onOpenRoomPhotos });
+      if (item.category === "makanan") return h(MenuList, { item });
+      if (item.category === "aktiviti") return h(HighlightsList, { item });
+      return null;
+    }
+
+    function GalleryGrid({ item, onOpen }) {
+      if (!item.gallery || !item.gallery.length) return null;
+      return h(DSection, { title: "Galeri", index: "02" },
+        h("div", { className: "gallery-grid" }, item.gallery.slice(0, 5).map((src, index) =>
+          h("button", { key: src + index, onClick: () => onOpen(index), "aria-label": "Buka gambar " + (index + 1) },
+            h("img", { src, alt: item.name + " " + (index + 1), loading: "lazy", decoding: "async" })
+          )
+        ))
+      );
+    }
+
+    function FacilitiesList({ item }) {
+      if (!item.facilities || !item.facilities.length) return null;
+      const title = item.category === "makanan" ? "Ciri tempat" : "Kemudahan";
+      return h(DSection, { title, index: "03" },
+        h("ul", { className: "dash-list" }, item.facilities.map((facility) => h("li", { key: facility }, facility)))
+      );
+    }
+
+    function NotesBlock({ item }) {
+      if (!item.notes || !item.notes.length) return null;
+      return h("div", { className: "notes" },
+        h("div", { className: "mono-label", style: { marginBottom: 7 } }, "Nota"),
+        item.notes.map((note) => h("p", { key: note }, note))
+      );
+    }
+
+    function Lightbox({ images, index, onClose, onMove }) {
+      useEffect(() => {
+        const onKey = (event) => {
+          if (event.key === "Escape") onClose();
+          if (event.key === "ArrowLeft") onMove(-1);
+          if (event.key === "ArrowRight") onMove(1);
+        };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+      }, [onClose, onMove]);
+      return h("div", { className: "lightbox", onClick: onClose },
+        h("img", { src: images[index], alt: "", onClick: (event) => event.stopPropagation() }),
+        h("button", { className: "lightbox__close", "aria-label": "Tutup", onClick: onClose }, "✕"),
+        images.length > 1 && h("button", { className: "lightbox__nav lightbox__nav--prev", "aria-label": "Sebelum", onClick: (event) => { event.stopPropagation(); onMove(-1); } }, "‹"),
+        images.length > 1 && h("button", { className: "lightbox__nav lightbox__nav--next", "aria-label": "Seterus", onClick: (event) => { event.stopPropagation(); onMove(1); } }, "›"),
+        h("span", { className: "lightbox__count" }, (index + 1) + " / " + images.length)
+      );
+    }
+
+    function StickyActions({ item }) {
+      const message = encodeURIComponent("Hi, saya nak tanya tentang " + item.name);
+      const actions = [
+        item.phone && h("a", { key: "call", className: "btn btn--ghost", href: "tel:" + item.phone }, h(Icon, { type: "phone", size: 15 }), "Call"),
+        item.whatsapp && h("a", { key: "whatsapp", className: "btn btn--sea", href: "https://wa.me/" + item.whatsapp + "?text=" + message }, h(Icon, { type: "whatsapp", size: 15 }), "WhatsApp")
+      ].filter(Boolean);
+      if (!actions.length) return null;
+      return h("div", { className: "actions" + (actions.length === 1 ? " actions--single" : "") },
+        actions
+      );
+    }
+
+    function DetailScreen({ item, onBack, onHome, onDemo }) {
+      const [lightbox, setLightbox] = useState(null);
+      const galleryImages = getGalleryImages(item).slice(0, 5);
+      const openLightbox = (images, index = 0) => {
+        const cleanImages = uniqueImages(images);
+        if (!cleanImages.length) return;
+        setLightbox({ images: cleanImages, index: Math.min(Math.max(index, 0), cleanImages.length - 1) });
+      };
+      const moveLightbox = (step) => setLightbox((current) => current
+        ? { ...current, index: (current.index + step + current.images.length) % current.images.length }
+        : current);
+      const status = getStatusInfo(item);
+      return h("div", null,
+        h(TopBar, { onHome, onDemo }),
+        h("div", { className: "detail-back-wrap" },
+          h("button", { className: "detail-back", onClick: onBack }, h(Icon, { type: "back", size: 15 }), "Kembali")
+        ),
+        h("div", { className: "screen detail-pad" },
+          h("div", { className: "hero" },
+            h("img", { src: item.hero, alt: item.name }),
+            hasTemporaryImage(item) && h("span", { className: "hero__temp" }, "Gambar sementara"),
+            h("div", { className: "hero__overlay" },
+              h("div", { className: "hero__status-row" },
+                h("span", { className: "hero__badge" }, item.badge),
+                h("span", { className: "status-chip " + status.className }, status.label)
+              ),
+              h("h1", { className: "hero__name" }, item.name),
+              h("p", { className: "hero__tagline" }, item.tagline)
+            )
+          ),
+          h(MetricStrip, { item }),
+          h("div", { className: "detail-body" },
+            h(SocialRow, { item }),
+            h(ContactNotice, { item }),
+            h(InfoList, { item }),
+            h(CategoryDetail, { item, onOpenRoomPhotos: openLightbox }),
+            h(GalleryGrid, { item, onOpen: (index) => openLightbox(galleryImages, index) }),
+            h(FacilitiesList, { item }),
+            h(NotesBlock, { item })
+          ),
+          h(Footer, null)
+        ),
+        h(StickyActions, { item }),
+        lightbox && h(Lightbox, { images: lightbox.images, index: lightbox.index, onClose: () => setLightbox(null), onMove: moveLightbox })
+      );
+    }
+
+    function Footer() {
+      return h("div", { className: "footer" },
+        h("span", null, "Dikuasakan oleh ", h("a", { href: "https://melakapedia.my", target: "_blank", rel: "noreferrer" }, "melakapedia.my")),
+        h("span", null, "Demo")
+      );
+    }
+
+    function App() {
+      const [screen, setScreen] = useState("qr");
+      const [activeCategory, setActiveCategory] = useState("penginapan");
+      const [selected, setSelected] = useState(null);
+      const [listings, setListings] = useState(LISTINGS);
+      useEffect(() => {
+        let alive = true;
+        const loadListings = async () => {
+          try {
+            const liveResponse = await fetch("/.netlify/functions/listings", { cache: "no-store" });
+            if (liveResponse.ok) {
+              const payload = await liveResponse.json();
+              if (payload && payload.listings) {
+                if (alive) setListings(normalizeListings(payload.listings));
+                return;
+              }
+            }
+          } catch (_) {
+          }
+
+          try {
+            const response = await fetch("data/listings.json", { cache: "no-store" });
+            if (!response.ok) throw new Error("Data not found");
+            const data = await response.json();
+            if (alive) setListings(normalizeListings(data));
+          } catch (_) {
+          }
+        };
+        loadListings();
+        return () => {
+          alive = false;
+        };
+      }, []);
+      useEffect(() => {
+        const onPop = () => {
+          setSelected(null);
+          setScreen((current) => current === "detail" ? "directory" : current);
+          requestAnimationFrame(() => window.scrollTo(0, 0));
+        };
+        window.addEventListener("popstate", onPop);
+        return () => window.removeEventListener("popstate", onPop);
+      }, []);
+      const jumpTop = () => requestAnimationFrame(() => window.scrollTo(0, 0));
+      const openDirectory = () => {
+        setSelected(null);
+        setScreen("directory");
+        jumpTop();
+      };
+      const openDemo = () => {
+        setSelected(null);
+        setScreen("qr");
+        jumpTop();
+      };
+      const closeDetail = () => {
+        if (window.history.state && window.history.state.melakapediaDetail) {
+          window.history.back();
+        } else {
+          openDirectory();
+        }
+      };
+      const openHome = () => {
+        setSelected(null);
+        setActiveCategory("penginapan");
+        setScreen("directory");
+        jumpTop();
+      };
+      const changeCategory = (category) => {
+        setActiveCategory(category);
+        jumpTop();
+      };
+      return h("main", { className: "frame" },
+        screen === "qr" && h(QRScreen, { onScan: openDirectory }),
+        screen === "directory" && h(DirectoryScreen, {
+          activeCategory,
+          listings,
+          onDemo: openDemo,
+          setActiveCategory: changeCategory,
+          onSelect: (item) => {
+            setSelected(item);
+            setScreen("detail");
+            window.history.pushState({ melakapediaDetail: true }, "");
+            jumpTop();
+          }
+        }),
+        screen === "detail" && selected && h(DetailScreen, {
+          item: selected,
+          onBack: closeDetail,
+          onHome: openHome,
+          onDemo: openDemo
+        })
+      );
+    }
+    ReactDOM.createRoot(document.getElementById("root")).render(h(App, null));
+  })();
+  </script>
+</body>
+</html>

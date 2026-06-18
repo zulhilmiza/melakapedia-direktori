@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1200, initial-scale=1" />
+  <title>WhatsApp Preview</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 1200px;
+      height: 630px;
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+    }
+
+    .card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 54px;
+      align-items: center;
+      padding: 62px 76px;
+      background-image:
+        linear-gradient(90deg, rgba(5, 18, 28, 0.96), rgba(5, 18, 28, 0.82) 48%, rgba(5, 18, 28, 0.48)),
+        url("pengkalan-balak-placeholder.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .logo {
+      width: 315px;
+      height: 315px;
+      object-fit: contain;
+      filter:
+        drop-shadow(0 0 2px #ffffff)
+        drop-shadow(0 0 7px #ffffff)
+        drop-shadow(0 12px 24px rgba(0, 0, 0, 0.44));
+    }
+
+    .label {
+      display: inline-block;
+      border: 3px solid rgba(255, 255, 255, 0.42);
+      background: rgba(7, 19, 28, 0.64);
+      padding: 14px 19px;
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 900;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      font-size: 74px;
+      line-height: 0.94;
+      letter-spacing: 0;
+      font-weight: 900;
+    }
+
+    p {
+      margin: 28px 0 0;
+      max-width: 720px;
+      color: #d9f8ff;
+      font-size: 30px;
+      line-height: 1.22;
+      font-weight: 800;
+    }
+
+    .footer {
+      position: absolute;
+      left: 76px;
+      right: 76px;
+      bottom: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #7dd3fc;
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .pill {
+      color: #052e16;
+      background: #22c55e;
+      padding: 15px 20px;
+      font-size: 23px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="melakapedia-badge.png" alt="" />
+    <section>
+      <div class="label">Demo QR Directory</div>
+      <h1>Demo QR Chalet Masjid Tanah</h1>
+      <p>Cari chalet, semak harga, lihat gambar, buka lokasi dan WhatsApp owner.</p>
+    </section>
+    <div class="footer">
+      <span>pengkalanbalak.rumaku.my</span>
+      <span class="pill">Scan QR untuk cari chalet</span>
+    </div>
+  </main>
+</body>
+</html>
