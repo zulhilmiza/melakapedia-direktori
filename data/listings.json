@@ -7,13 +7,13 @@
    "badge": "Chalet",
    "tagline": "Chalet klasik tepi pantai",
    "area": "Pantai Pengkalan Balak",
-   "hero": "assets/penginapan/desa-damai-chalet/hero.jpg",
+   "hero": "assets/penginapan/desa-damai-chalet/web/hero.jpg",
    "gallery": [
-    "assets/penginapan/desa-damai-chalet/hero.jpg",
-    "assets/penginapan/desa-damai-chalet/1.jpg",
-    "assets/penginapan/desa-damai-chalet/4.jpg",
-    "assets/penginapan/desa-damai-chalet/5.jpg",
-    "assets/penginapan/desa-damai-chalet/6.jpg"
+    "assets/penginapan/desa-damai-chalet/web/hero.jpg",
+    "assets/penginapan/desa-damai-chalet/web/1.jpg",
+    "assets/penginapan/desa-damai-chalet/web/4.jpg",
+    "assets/penginapan/desa-damai-chalet/web/5.jpg",
+    "assets/penginapan/desa-damai-chalet/web/6.jpg"
    ],
    "mapsUrl": "https://maps.app.goo.gl/uuYrxPPP26XQKNdy8?g_st=ic",
    "phone": "60132568578",
@@ -30,9 +30,9 @@
      "weekday": 200,
      "weekend": 250,
      "superpeak": 250,
-     "thumb": "assets/penginapan/desa-damai-chalet/exclusive-1.jpg",
+     "thumb": "assets/penginapan/desa-damai-chalet/web/exclusive-1.jpg",
      "photos": [
-      "assets/penginapan/desa-damai-chalet/exclusive-2.jpg"
+      "assets/penginapan/desa-damai-chalet/web/exclusive-2.jpg"
      ]
     },
     {
@@ -42,9 +42,9 @@
      "weekday": 220,
      "weekend": 270,
      "superpeak": 270,
-     "thumb": "assets/penginapan/desa-damai-chalet/premium-1.jpg",
+     "thumb": "assets/penginapan/desa-damai-chalet/web/premium-1.jpg",
      "photos": [
-      "assets/penginapan/desa-damai-chalet/premium-2.jpg"
+      "assets/penginapan/desa-damai-chalet/web/premium-2.jpg"
      ]
     },
     {
@@ -54,9 +54,9 @@
      "weekday": 250,
      "weekend": 300,
      "superpeak": 300,
-     "thumb": "assets/penginapan/desa-damai-chalet/premium-plus-1.jpg",
+     "thumb": "assets/penginapan/desa-damai-chalet/web/premium-plus-1.jpg",
      "photos": [
-      "assets/penginapan/desa-damai-chalet/premium-plus-2.jpg"
+      "assets/penginapan/desa-damai-chalet/web/premium-plus-2.jpg"
      ]
     }
    ],
