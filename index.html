@@ -2086,7 +2086,6 @@
     function InfoList({ item }) {
       const status = getStatusInfo(item);
       const rows = [["Status", status.label], ["Waktu", item.hours], ["Lokasi", item.area]];
-      if (item.owner) rows.push(["Pengusaha", item.owner]);
       if (item.address) rows.push(["Alamat", item.address]);
       if (item.ticket) rows.push(["Tiket", item.ticket]);
       const mapLabel = item.mapsUrl && item.mapsUrl.includes("/maps/search") ? "Cari Google Maps" : "Google Maps";
