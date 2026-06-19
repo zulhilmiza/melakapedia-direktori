@@ -2183,7 +2183,7 @@
           entry.weekday ? h("div", { className: "rates" },
             h("div", null, h("span", { className: "l" }, "Biasa"), h("span", { className: "v" }, "RM", entry.weekday)),
             h("div", null, h("span", { className: "l" }, "Minggu"), h("span", { className: "v" }, "RM", entry.weekend)),
-            h("div", null, h("span", { className: "l" }, "Super"), h("span", { className: "v" }, "RM", entry.superpeak))
+            entry.superpeak ? h("div", null, h("span", { className: "l" }, "Super"), h("span", { className: "v" }, "RM", entry.superpeak)) : null
           ) : null
         );
         }
