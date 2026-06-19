@@ -1758,8 +1758,8 @@
         const roomPrices = (item.rooms || []).map((room) => room.priceFrom).filter(Boolean);
         if (roomPrices.length) return { label: "Dari " + formatMoney(Math.min(...roomPrices)), meta: "semalam" };
         if (!hasContact(item)) return { label: "Harga belum ada", meta: "kontak belum lengkap" };
-        const meta = getFallbackPriceMeta(item.priceLabel);
-        return { label: meta === "hubungi pengusaha" ? "Tanya harga" : "Semak harga", meta };
+        if (item.priceLabel) return { label: item.priceLabel, meta: getFallbackPriceMeta(item.priceLabel) };
+        return { label: "Semak harga", meta: "semak dahulu" };
       }
       return { label: item.priceLabel || "Lihat info", meta: item.badge || "Butiran" };
     };
