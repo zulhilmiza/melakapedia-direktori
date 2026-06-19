@@ -801,9 +801,7 @@
     const STORAGE_KEY = "melakapedia_qr_directory_admin_v1";
     const ADMIN_KEY_STORAGE_KEY = "melakapedia_admin_publish_key";
     const SEED_DATA_URL = "data/listings.json";
-    const LIVE_DATA_URL = location.hostname === "127.0.0.1" || location.hostname === "localhost" || location.protocol === "file:"
-      ? "https://pengkalanbalak.rumaku.my/.netlify/functions/listings"
-      : "/.netlify/functions/listings";
+    const LIVE_DATA_URL = "/api/listings";
     const categories = [
       { id: "penginapan", label: "Penginapan" },
       { id: "makanan", label: "Makanan" },

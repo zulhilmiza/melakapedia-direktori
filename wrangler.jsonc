@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "melakapedia-direktori",
+  "main": "worker.js",
   "compatibility_date": "2026-06-19",
   "observability": {
     "enabled": true
@@ -8,6 +9,12 @@
   "assets": {
     "directory": "."
   },
+  "kv_namespaces": [
+    {
+      "binding": "LISTINGS_KV",
+      "id": "50fccda2b60445b883ee1edafa751708"
+    }
+  ],
   "compatibility_flags": [
     "nodejs_compat"
   ]
