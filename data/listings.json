@@ -68,6 +68,271 @@
    ],
    "status": "disahkan",
    "areaGroup": "pantai-pengkalan-balak"
+  },
+  {
+   "id": "d-nelayan",
+   "category": "penginapan",
+   "name": "D Nelayan Beach Resort",
+   "tagline": "Segalanya ada di sini",
+   "badge": "Resort",
+   "area": "Pantai Sungai Tuang",
+   "hero": "assets/penginapan/d-nelayan/hero.jpg",
+   "gallery": [
+    "assets/penginapan/d-nelayan/hero.jpg",
+    "assets/penginapan/d-nelayan/standard.jpg",
+    "assets/penginapan/d-nelayan/superior.jpg",
+    "assets/penginapan/d-nelayan/supreme.jpg",
+    "assets/penginapan/d-nelayan/family.jpg"
+   ],
+   "mapsUrl": "https://maps.app.goo.gl/5BJxerMS89731Hep6",
+   "phone": "064848666",
+   "whatsapp": "60192548777",
+   "facebook": "https://facebook.com/dnelayanresort",
+   "tiktok": "https://www.tiktok.com/@dnelayanbeachresort",
+   "website": "https://www.dnelayanbeachresort.com",
+   "hours": "Check-in 3.00 PM, check-out 12.00 PM",
+   "priceLabel": "Dari RM120/malam",
+   "rooms": [
+    {
+     "name": "Standard Room",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/standard.jpg",
+     "priceFrom": 120,
+     "weekday": 120,
+     "weekend": 160,
+     "superpeak": 180,
+     "photos": [
+      "assets/penginapan/d-nelayan/superior.jpg",
+      "assets/penginapan/d-nelayan/supreme.jpg"
+     ]
+    },
+    {
+     "name": "Superior Room",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/superior.jpg",
+     "priceFrom": 160,
+     "weekday": 160,
+     "weekend": 200,
+     "superpeak": 220,
+     "photos": [
+      "assets/penginapan/d-nelayan/standard.jpg",
+      "assets/penginapan/d-nelayan/supreme.jpg"
+     ]
+    },
+    {
+     "name": "Supreme Room",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/supreme.jpg",
+     "priceFrom": 200,
+     "weekday": 200,
+     "weekend": 240,
+     "superpeak": 260,
+     "photos": [
+      "assets/penginapan/d-nelayan/superior.jpg",
+      "assets/penginapan/d-nelayan/deluxe.jpg"
+     ]
+    },
+    {
+     "name": "Deluxe Tanpa Balkoni",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/deluxe.jpg",
+     "priceFrom": 250,
+     "weekday": 250,
+     "weekend": 290,
+     "superpeak": 310,
+     "photos": [
+      "assets/penginapan/d-nelayan/deluxe-balkoni.jpg",
+      "assets/penginapan/d-nelayan/suite.jpg"
+     ]
+    },
+    {
+     "name": "Deluxe Balkoni",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/deluxe-balkoni.jpg",
+     "priceFrom": 300,
+     "weekday": 300,
+     "weekend": 340,
+     "superpeak": 360,
+     "photos": [
+      "assets/penginapan/d-nelayan/deluxe.jpg",
+      "assets/penginapan/d-nelayan/suite.jpg"
+     ]
+    },
+    {
+     "name": "Suite Laut",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/suite.jpg",
+     "priceFrom": 350,
+     "weekday": 350,
+     "weekend": 390,
+     "superpeak": 410,
+     "photos": [
+      "assets/penginapan/d-nelayan/deluxe-balkoni.jpg",
+      "assets/penginapan/d-nelayan/family.jpg"
+     ]
+    },
+    {
+     "name": "Family Room",
+     "capacity": "Rujuk resort",
+     "thumb": "assets/penginapan/d-nelayan/family.jpg",
+     "priceFrom": 180,
+     "weekday": 180,
+     "weekend": 220,
+     "superpeak": 240,
+     "photos": [
+      "assets/penginapan/d-nelayan/suite.jpg",
+      "assets/penginapan/d-nelayan/hero.jpg"
+     ]
+    }
+   ],
+   "facilities": [
+    "Kolam renang",
+    "Kafe",
+    "Family day",
+    "Ruang acara",
+    "Pantai Sungai Tuang"
+   ],
+   "notes": [
+    "Paparan bilik menggunakan gambar local yang telah dimasukkan.",
+    "Harga bilik adalah anggaran demo untuk pembentangan; kadar sebenar perlu disahkan dengan pengusaha."
+   ],
+   "status": "disahkan",
+   "areaGroup": "pantai-sungai-tuang"
+  },
+  {
+   "id": "riang-ria",
+   "category": "penginapan",
+   "name": "Riang Ria Resort",
+   "tagline": "Resort keluarga di Pantai Pengkalan Balak",
+   "badge": "Resort",
+   "area": "Pantai Pengkalan Balak",
+   "hero": "assets/penginapan/riang-ria/hero.jpg",
+   "gallery": [
+    "assets/penginapan/riang-ria/hero.jpg",
+    "assets/penginapan/riang-ria/standard.jpg",
+    "assets/penginapan/riang-ria/family.jpg",
+    "assets/penginapan/riang-ria/deluxe.jpg",
+    "assets/penginapan/riang-ria/suite.jpg"
+   ],
+   "mapsUrl": "https://maps.app.goo.gl/LY8i9NECQ6jiUzds7",
+   "phone": "063848777",
+   "whatsapp": "601154258773",
+   "facebook": "https://www.facebook.com/riangriaresort",
+   "tiktok": "https://www.tiktok.com/@riangriaresort",
+   "website": "https://www.riangriaresort.com",
+   "hours": "Check-in 3.00 PM, check-out 12.00 PM",
+   "priceLabel": "Dari RM90/malam",
+   "rooms": [
+    {
+     "name": "Bilik Standard",
+     "capacity": "Maksimum 2 orang",
+     "thumb": "assets/penginapan/riang-ria/standard.jpg",
+     "priceFrom": 90,
+     "weekday": 90,
+     "weekend": 140,
+     "superpeak": 150,
+     "extra": "2 katil single"
+    },
+    {
+     "name": "Bilik Deluxe",
+     "capacity": "Maksimum 3 orang",
+     "thumb": "assets/penginapan/riang-ria/deluxe.jpg",
+     "priceFrom": 120,
+     "weekday": 120,
+     "weekend": 160,
+     "superpeak": 170,
+     "extra": "1 katil double + 1 katil single"
+    },
+    {
+     "name": "Bilik Family",
+     "capacity": "Maksimum 4 orang",
+     "thumb": "assets/penginapan/riang-ria/family.jpg",
+     "priceFrom": 150,
+     "weekday": 150,
+     "weekend": 190,
+     "superpeak": 200,
+     "extra": "2 katil double"
+    },
+    {
+     "name": "Bilik Suite",
+     "capacity": "Maksimum 6 orang",
+     "thumb": "assets/penginapan/riang-ria/suite.jpg",
+     "priceFrom": 190,
+     "weekday": 190,
+     "weekend": 240,
+     "superpeak": 250,
+     "extra": "3 katil double"
+    }
+   ],
+   "facilities": [
+    "TV",
+    "Penghawa dingin",
+    "Tuala",
+    "Wi-Fi",
+    "Sejadah",
+    "Pantai Pengkalan Balak"
+   ],
+   "notes": [
+    "Tambahan cukai warisan RM3/bilik.",
+    "Seterika dan cerek atas request.",
+    "Harga bilik adalah anggaran demo untuk pembentangan; kadar sebenar perlu disahkan dengan pengusaha."
+   ],
+   "status": "disahkan",
+   "areaGroup": "pantai-pengkalan-balak"
+  },
+  {
+   "id": "kemunting",
+   "category": "penginapan",
+   "name": "Kemunting Beach Resort",
+   "tagline": "Selami keindahan Pantai Pengkalan Balak Melaka",
+   "badge": "Beach Resort",
+   "area": "Pantai Pengkalan Balak",
+   "hero": "assets/penginapan/kemunting/hero.jpg",
+   "gallery": [
+    "assets/penginapan/kemunting/hero.jpg",
+    "assets/penginapan/kemunting/room-01.jpg",
+    "assets/penginapan/kemunting/room-02.jpg"
+   ],
+   "mapsUrl": "https://maps.app.goo.gl/LWkh5TJMwS1EgEMUA",
+   "phone": "063848744",
+   "whatsapp": "60126748744",
+   "facebook": "https://www.facebook.com/kemuntingbeachresort",
+   "tiktok": "https://www.tiktok.com/@kemuntingbeachresorts",
+   "website": "https://www.kemuntingbeachresort.com.my",
+   "hours": "Check-in 3.00 PM, check-out 12.00 PM",
+   "priceLabel": "Dari RM220/malam",
+   "rooms": [
+    {
+     "name": "Bilik / chalet resort",
+     "capacity": "Rujuk website",
+     "thumb": "assets/penginapan/kemunting/room-01.jpg",
+     "priceFrom": 220,
+     "weekday": 220,
+     "weekend": 260,
+     "superpeak": 280
+    },
+    {
+     "name": "Bilik keluarga",
+     "capacity": "Rujuk website",
+     "thumb": "assets/penginapan/kemunting/room-02.jpg",
+     "priceFrom": 270,
+     "weekday": 270,
+     "weekend": 310,
+     "superpeak": 330
+    }
+   ],
+   "facilities": [
+    "Kolam renang",
+    "Court bola tampar",
+    "Karaoke",
+    "Pantai Pengkalan Balak"
+   ],
+   "notes": [
+    "Imej demo disimpan dalam assets/penginapan/kemunting.",
+    "Harga bilik adalah anggaran demo untuk pembentangan; kadar sebenar perlu disahkan dengan pengusaha."
+   ],
+   "status": "disahkan",
+   "areaGroup": "pantai-pengkalan-balak"
   }
  ],
  "makanan": [],
