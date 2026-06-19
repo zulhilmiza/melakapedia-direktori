@@ -2338,7 +2338,7 @@
         let alive = true;
         const loadListings = async () => {
           try {
-            const liveResponse = await fetch("/.netlify/functions/listings", { cache: "no-store" });
+            const liveResponse = await fetch("/api/listings", { cache: "no-store" });
             if (liveResponse.ok) {
               const payload = await liveResponse.json();
               if (payload && payload.listings) {
